@@ -82,6 +82,7 @@ id GetNonNullValueForKey( NSDictionary<NSString *, id>* dict, NSString* key) {
   if (confirmButtonText) {
     panel.prompt = confirmButtonText;
   }
+  panel.canCreateDirectories = YES;
 }
 
 /**
@@ -100,6 +101,7 @@ id GetNonNullValueForKey( NSDictionary<NSString *, id>* dict, NSString* key) {
   }
   panel.canChooseDirectories = choosingDirectory;
   panel.canChooseFiles = !choosingDirectory;
+  panel.canCreateDirectories = YES;
 }
 
 #pragma FlutterPlugin implementation
